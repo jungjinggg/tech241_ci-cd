@@ -30,9 +30,29 @@ In summary, CI/CD pipelines allow the business to speed up the software developm
 
 
 ## Implementing CI/CD pipelines
-1) Code
-2) Build
-3) Test
-4) Deploy
+1) Development - this stage involves writing and implementing the code: adding new features, fixing bugs and making enhancements according to the requirements and specifications.
+2) Build - the build stage prioritising on compling, linking and packaging the source code into a deliverable form.
+3) Test - this stage is used to verify the functionality, quality and reliability of the software.
+4) Deploy - the deploy stage involves making the software available for use.
 
 ![ci/cd pipelines](images/CICD_Pipeline.webp)
+
+## Create a job in Jenkins
+1) Create new time
+2) Enter a name: *parichat-testing-evn *
+3) Select Freestyle project
+   1) Select *Discard old build* 
+      * Max # of builds to keep: 3 
+
+        ![create job](images/create_job.png)
+
+4) Build
+   * `uname -a` 
+
+## Post build action
+This allows a second job to run after the first job is successful.
+
+On the build page:
+   * Select *Build other projects*
+   * Select a project
+     ![post build jenkins](images/post_build.png) 
