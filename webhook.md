@@ -11,13 +11,13 @@ Add webhooks
 4) Discard old builds: 3
 5) Github project: project url *https://github.com/jungjinggg/tech241_sparta_app.git*
 6) Soruce Code management
-   1) Git
-   2) Enter repo URL: ssh
-   3) Add: Kind *SSH Useranem with private key*  
+   1) Select *Git*
+   2) Enter repo URL: *ssh url*
+   3) Add: Kind *SSH Username with private key*  
    4) Enter username
    5) Paste *private key*
 7) Build environment
-   * Provide Node&npm
+   * Select *Provide Node&npm*
 8) Build Triggers: Select *GitHub hook trigger for GITsm polling*
 8) Build
    * execute shell
