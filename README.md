@@ -28,6 +28,7 @@ In summary, CI/CD pipelines allow the business to speed up the software developm
 
 ![CI/CD pipeline with Jenkins](images/jenkins_diagram.png)
 
+Webhook triggers are an automatic trigger that listens for a c
 
 ## Implementing CI/CD pipelines
 1) Development - this stage involves writing and implementing the code: adding new features, fixing bugs and making enhancements according to the requirements and specifications.
@@ -56,3 +57,35 @@ On the build page:
    * Select *Build other projects*
    * Select a project
      ![post build jenkins](images/post_build.png) 
+
+
+## Master and Agent nodes
+master node is like a controller management with auto scaling group in place.
+Agent node helps reduce the load from the master
+
+
+## Connect jenkins with github using ssh
+1) Create a new job
+2) Name
+3) Description
+4) Discard old builds: 3
+5) Github project: project url *https://github.com/jungjinggg/tech241_sparta_app.git*
+6) Soruce Code management
+   1) Git
+   2) Enter repo URL: ssh
+   3) Add: Kind *SSH Useranem with private key*  
+   4) Enter username
+   5) Paste *private key*
+7) Build environment
+   1) Provide Node&npm
+8) Build
+   1) execute shell
+      ```shell
+      cd app
+      npm install
+      npm test
+      ```
+9) office 365 connector: Restrict where this project can be run *sparta-ubuntu-node* 
+
+
+## Create webhook
