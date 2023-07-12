@@ -31,3 +31,4 @@ Add webhooks
 If set up correctly, when push a commit, Jenkins will log the last GitHub Push.
 
 ![webhooks log](images/webhooks_log.png)
+
