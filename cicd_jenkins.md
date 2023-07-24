@@ -1,5 +1,7 @@
 # CI/CD on jenkins
 
+![Jenkins architecture](images/jenkins_arch.png)
+
 ## Job 1: Test on dev branch
 This job is for testing the npm
 
