@@ -20,8 +20,6 @@ This job is for testing the npm
 
    ![ci merge configure](images/ci_merge2.png)
 
-   ![ci merge configure](images/ci_merge3.png)
-
 
 ## Job 3: copy app from the main branch and push to prodection
 1) Copy the app folder
