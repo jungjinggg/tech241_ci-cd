@@ -21,7 +21,7 @@ This job is for testing the npm
    ![ci merge configure](images/ci_merge2.png)
 
 
-## Job 3: copy app from the main branch and push to prodection
+## Job 3: copy app from the main branch and push to production
 1) Copy the app folder
 2) SSH into EC2 instance
 3) Navigate to the app folder
