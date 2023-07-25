@@ -48,14 +48,12 @@ EOF
 
 ![cd configure](images/cd2.png)
 
-## Note
-
-`scp` command is considered to be more secure than `rsync`
 
 ## Blockers
 ### On CI merge
-* `git fetch orgin` and `git push origin` main comes up with error of ***Host key verification falied*** fixed by adding Git Publisher to ***push only if build succeeds***
+
+`git fetch orgin` and `git push origin` main comes up with error of ***Host key verification falied*** fixed by adding Git Publisher to ***push only if build succeeds***
 
 ### On CD job
-1) 502 bad gateway fixed by adding `npm install`
-2) scp didn't work, fixed by using rsync
+502 bad gateway fixed by adding `npm install`
+
